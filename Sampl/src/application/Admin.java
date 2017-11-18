@@ -32,8 +32,8 @@ public class Admin extends User implements Serializable {
 	 */
 	public ArrayList<Request> getUnAcceptedRequests() throws IOException, ClassNotFoundException{
 		//Request.clear();
-		String path = "C:\\Users\\HP\\Downloads\\Submission\\Submission\\Data";
-		FileInputStream fileIn = new FileInputStream("C:\\Users\\HP\\Downloads\\Submission\\Submission\\Data\\Requests.ser");
+		String path = "C:\\Users\\Sahil Hassan\\Documents\\Coursework\\CSE201 Advanced Programming\\AP Project 1\\Data\\";
+		FileInputStream fileIn = new FileInputStream("C:\\\\Users\\\\Sahil Hassan\\\\Documents\\\\Coursework\\\\CSE201 Advanced Programming\\\\AP Project 1\\\\Data\\\\Requests.ser");
 		ObjectInputStream in = new ObjectInputStream(fileIn);
 		ArrayList<Request> readRequests= new ArrayList<Request>();
 		try
@@ -63,8 +63,8 @@ public class Admin extends User implements Serializable {
 	 * @throws ClassNotFoundException
 	 */
 	public ArrayList<Request> getAcceptedRequests() throws IOException, ClassNotFoundException{
-		String path = "C:\\Users\\HP\\Downloads\\Submission\\Submission\\Data";
-		FileInputStream fileIn = new FileInputStream("C:\\Users\\HP\\Downloads\\Submission\\Submission\\Data\\Requests.ser");
+		String path = "C:\\Users\\Sahil Hassan\\Documents\\Coursework\\CSE201 Advanced Programming\\AP Project 1\\Data\\";
+		FileInputStream fileIn = new FileInputStream("C:\\\\Users\\\\Sahil Hassan\\\\Documents\\\\Coursework\\\\CSE201 Advanced Programming\\\\AP Project 1\\\\Data\\\\Requests.ser");
 		ObjectInputStream in = new ObjectInputStream(fileIn);
 		ArrayList<Request> readRequests= new ArrayList<Request>();
 		try
@@ -97,7 +97,7 @@ public class Admin extends User implements Serializable {
 	public static Admin validate(String name, String password, String usertype) throws ClassNotFoundException, IOException {
 		
 		System.out.println("Name : " + name);
-		String path = "C:\\Users\\HP\\Downloads\\Submission\\Submission\\Data";
+		String path = "C:\\Users\\Sahil Hassan\\Documents\\Coursework\\CSE201 Advanced Programming\\AP Project 1\\Data\\";
 		FileInputStream fileIn = new FileInputStream(path + usertype + ".ser");
 		ObjectInputStream in = new ObjectInputStream(fileIn);
 		ArrayList<Admin> readUsers = new ArrayList<Admin>();
@@ -132,7 +132,7 @@ public class Admin extends User implements Serializable {
 	 */
 	public static boolean addUser(Admin newAdmin) throws IOException, ClassNotFoundException {
 		
-    	String path = "C:\\Users\\HP\\Downloads\\Submission\\Submission\\DataAdmin.ser";
+    	String path = "C:\\Users\\Sahil Hassan\\Documents\\Coursework\\CSE201 Advanced Programming\\AP Project 1\\Data\\Admin.ser";
     	System.out.println(path);
 		FileInputStream fileIn = new FileInputStream(path);
 		ObjectInputStream in = new ObjectInputStream(fileIn);
@@ -160,7 +160,7 @@ public class Admin extends User implements Serializable {
 		}
 		readUsers.add(newAdmin);
     		
-		String Path = "C:\\Users\\HP\\Downloads\\Submission\\Submission\\DataAdmin.ser";
+		String Path = "C:\\Users\\Sahil Hassan\\Documents\\Coursework\\CSE201 Advanced Programming\\AP Project 1\\Data\\Admin.ser";
 		FileOutputStream fileOut =  new FileOutputStream(Path);
 		ObjectOutputStream out =  new ObjectOutputStream(fileOut);
 		try {
@@ -183,7 +183,7 @@ public class Admin extends User implements Serializable {
 	 */
 	public void logout() throws IOException, ClassNotFoundException {
 		Request.clear();
-		String path = "C:\\Users\\HP\\Downloads\\Submission\\Submission\\Data\\Admin.ser";
+		String path = "C:\\Users\\Sahil Hassan\\Documents\\Coursework\\CSE201 Advanced Programming\\AP Project 1\\Data\\Admin.ser";
 		FileInputStream fileIn = new FileInputStream(path);
 		ObjectInputStream in = new ObjectInputStream(fileIn);
 		ArrayList<Admin> readUsers = new ArrayList<Admin>();
@@ -205,7 +205,7 @@ public class Admin extends User implements Serializable {
 				
 			}
 		}
-		String Path = "C:\\Users\\HP\\Downloads\\Submission\\Submission\\Data\\Admin.ser";
+		String Path = "C:\\Users\\Sahil Hassan\\Documents\\Coursework\\CSE201 Advanced Programming\\AP Project 1\\Data\\Admin.ser";
 		FileOutputStream fileOut =  new FileOutputStream(Path);
 		ObjectOutputStream out =  new ObjectOutputStream(fileOut);
 		try {

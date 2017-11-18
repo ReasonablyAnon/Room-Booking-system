@@ -87,7 +87,7 @@ public class Main extends Application implements Serializable {
 	public static void main(String[] args) throws IOException, ClassNotFoundException,FileNotFoundException {
 		
 		ArrayList<Request> requests = new ArrayList<Request>();
-		String path = "C:\\Users\\HP\\Downloads\\Submission\\Submission\\Data\\Requests.ser";
+		String path = "C:\\Users\\Sahil Hassan\\Documents\\Coursework\\CSE201 Advanced Programming\\AP Project 1\\Data\\Requests.ser";
 		//System.out.println(path);
 		FileOutputStream fileOut =  new FileOutputStream(path);
 		ObjectOutputStream out =  new ObjectOutputStream(fileOut);
@@ -139,7 +139,7 @@ public class Main extends Application implements Serializable {
 		
 		
 		
-		String path1 = "C:\\Users\\HP\\Downloads\\Submission\\Submission\\Data\\Student.ser";
+		String path1 = "C:\\Users\\Sahil Hassan\\Documents\\Coursework\\CSE201 Advanced Programming\\AP Project 1\\Data\\Student.ser";
 		FileOutputStream fileOut1 =  new FileOutputStream(path1);
 		ObjectOutputStream out1 =  new ObjectOutputStream(fileOut1);
 		try {
@@ -153,7 +153,7 @@ public class Main extends Application implements Serializable {
 		out1.close();
 		
 		
-		String path2 = "C:\\Users\\HP\\Downloads\\Submission\\Submission\\Data\\Faculty.ser";
+		String path2 = "C:\\Users\\Sahil Hassan\\Documents\\Coursework\\CSE201 Advanced Programming\\AP Project 1\\Data\\Faculty.ser";
 		FileOutputStream fileOut2 =  new FileOutputStream(path2);
 		ObjectOutputStream out2 =  new ObjectOutputStream(fileOut2);
 		try {
@@ -166,7 +166,7 @@ public class Main extends Application implements Serializable {
 		
 		out2.close();
 		
-		String path3 = "C:\\Users\\HP\\Downloads\\Submission\\Submission\\Data\\Admin.ser";
+		String path3 = "C:\\Users\\Sahil Hassan\\Documents\\Coursework\\CSE201 Advanced Programming\\AP Project 1\\Data\\Admin.ser";
 		FileOutputStream fileOut3 =  new FileOutputStream(path3);
 		ObjectOutputStream out3 =  new ObjectOutputStream(fileOut3);
 		try {

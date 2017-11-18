@@ -42,7 +42,7 @@ public class Faculty extends User  implements Serializable{
 	 * @throws ClassNotFoundException
 	 */
 	public void logout() throws IOException, ClassNotFoundException {
-		String path = "C:\\Users\\HP\\Downloads\\Submission\\Submission\\Data\\Faculty.ser";
+		String path = "C:\\Users\\Sahil Hassan\\Documents\\Coursework\\CSE201 Advanced Programming\\AP Project 1\\Data\\Faculty.ser";
 		FileInputStream fileIn = new FileInputStream(path);
 		ObjectInputStream in = new ObjectInputStream(fileIn);
 		ArrayList<Faculty> readUsers = new ArrayList<Faculty>();
@@ -64,7 +64,7 @@ public class Faculty extends User  implements Serializable{
 				
 			}
 		}
-		String Path = "C:\\Users\\HP\\Downloads\\Submission\\Submission\\Data\\Faculty.ser";
+		String Path = "C:\\Users\\Sahil Hassan\\Documents\\Coursework\\CSE201 Advanced Programming\\AP Project 1\\Data\\Faculty.ser";
 		FileOutputStream fileOut =  new FileOutputStream(Path);
 		ObjectOutputStream out =  new ObjectOutputStream(fileOut);
 		try {
@@ -92,7 +92,7 @@ public class Faculty extends User  implements Serializable{
 	public static Faculty validate(String name, String password, String usertype) throws ClassNotFoundException, IOException {
 		
 		System.out.println("Name : " + name);
-		String path = "C:\\Users\\HP\\Downloads\\Submission\\Submission\\Data\\";
+		String path = "C:\\Users\\Sahil Hassan\\Documents\\Coursework\\CSE201 Advanced Programming\\AP Project 1\\Data\\";
 		FileInputStream fileIn = new FileInputStream(path + usertype + ".ser");
 		ObjectInputStream in = new ObjectInputStream(fileIn);
 		ArrayList<Faculty> readUsers = new ArrayList<Faculty>();
@@ -128,7 +128,7 @@ public class Faculty extends User  implements Serializable{
 	 */
 	public static boolean addUser(Faculty newFaculty) throws IOException, ClassNotFoundException {
 		
-    	String path = "C:\\Users\\HP\\Downloads\\Submission\\Submission\\Data\\Faculty.ser";
+    	String path = "C:\\Users\\Sahil Hassan\\Documents\\Coursework\\CSE201 Advanced Programming\\AP Project 1\\Data\\Faculty.ser";
     	System.out.println(path);
 		FileInputStream fileIn = new FileInputStream(path);
 		ObjectInputStream in = new ObjectInputStream(fileIn);
@@ -156,7 +156,7 @@ public class Faculty extends User  implements Serializable{
 		}
 		readUsers.add(newFaculty);
     		
-		String Path = "C:\\Users\\HP\\Downloads\\Submission\\Submission\\Data\\Faculty.ser";
+		String Path = "C:\\Users\\Sahil Hassan\\Documents\\Coursework\\CSE201 Advanced Programming\\AP Project 1\\Data\\Faculty.ser";
 		FileOutputStream fileOut =  new FileOutputStream(Path);
 		ObjectOutputStream out =  new ObjectOutputStream(fileOut);
 		try {

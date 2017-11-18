@@ -51,7 +51,7 @@ public class Student extends User implements Serializable {
 	public static Student validate(String name, String password, String usertype) throws ClassNotFoundException, IOException {
 			
 			System.out.println("Name : " + name);
-			String path = "C:\\Users\\HP\\Downloads\\Submission\\Submission\\Data\\Student.ser";
+			String path = "C:\\Users\\Sahil Hassan\\Documents\\Coursework\\CSE201 Advanced Programming\\AP Project 1\\Data\\Student.ser";
 			FileInputStream fileIn = new FileInputStream(path);
 			ObjectInputStream in = new ObjectInputStream(fileIn);
 			ArrayList<Student> readUsers = new ArrayList<Student>();
@@ -138,7 +138,7 @@ public class Student extends User implements Serializable {
 	}*/
 	public static boolean addUser(Student newStudent) throws IOException, ClassNotFoundException {
 		
-    	String path = "C:\\Users\\HP\\Downloads\\Submission\\Submission\\Data\\Student.ser";
+    	String path = "C:\\Users\\Sahil Hassan\\Documents\\Coursework\\CSE201 Advanced Programming\\AP Project 1\\Data\\Student.ser";
     	System.out.println(path);
 		FileInputStream fileIn = new FileInputStream(path);
 		ObjectInputStream in = new ObjectInputStream(fileIn);
@@ -172,7 +172,7 @@ public class Student extends User implements Serializable {
 		}
 		readUsers.add(newStudent);
     		
-		String Path = "C:\\Users\\HP\\Downloads\\Submission\\Submission\\Data\\Student.ser";
+		String Path = "C:\\Users\\Sahil Hassan\\Documents\\Coursework\\CSE201 Advanced Programming\\AP Project 1\\Data\\Student.ser";
 		FileOutputStream fileOut =  new FileOutputStream(Path);
 		ObjectOutputStream out =  new ObjectOutputStream(fileOut);
 		try {
@@ -201,7 +201,7 @@ public class Student extends User implements Serializable {
 		for(TimeTable tt : myTimeTable) {
 			System.out.println(tt.getDays() + tt.getLocation() + tt.getTime());
 		}
-		String path = "C:\\Users\\HP\\Downloads\\Submission\\Submission\\Data\\Student.ser";
+		String path = "C:\\Users\\Sahil Hassan\\Documents\\Coursework\\CSE201 Advanced Programming\\AP Project 1\\Data\\Student.ser";
 		FileInputStream fileIn = new FileInputStream(path);
 		ObjectInputStream in = new ObjectInputStream(fileIn);
 		ArrayList<Student> readUsers = new ArrayList<Student>();
@@ -225,7 +225,7 @@ public class Student extends User implements Serializable {
 			}
 		}
 		System.out.println(readUsers.get(i).myCourses.toArray().toString());
-		String Path = "C:\\Users\\HP\\Downloads\\Submission\\Submission\\Data\\Student.ser";
+		String Path = "C:\\Users\\Sahil Hassan\\Documents\\Coursework\\CSE201 Advanced Programming\\AP Project 1\\Data\\Student.ser";
 		FileOutputStream fileOut =  new FileOutputStream(Path);
 		ObjectOutputStream out =  new ObjectOutputStream(fileOut);
 		try {
@@ -244,7 +244,7 @@ public class Student extends User implements Serializable {
 	public void AddCourse( String course , boolean isSearchPart ) throws IOException
 	{
 		//course = course.substring(1, course.length()-1);
-		String csvFile = "C:\\Users\\HP\\Downloads\\Submission\\Submission\\Data\\project(1).csv";
+		String csvFile = "C:\\Users\\Sahil Hassan\\Documents\\Coursework\\CSE201 Advanced Programming\\AP Project 1\\Data\\project(1).csv";
         String FieldDelimiter = ",";
         BufferedReader bufferedReader;
         bufferedReader = new BufferedReader(new FileReader(csvFile));
@@ -415,7 +415,7 @@ public class Student extends User implements Serializable {
 		ArrayList<TimeTable> temp = new ArrayList<TimeTable>();
 		ArrayList<Course> allCourses = new ArrayList<Course>();
 		//searchString = searchString.toLowerCase();
-		String csvFile = "C:\\Users\\HP\\Downloads\\Submission\\Submission\\Data\\TestingPc.csv";
+		String csvFile = "C:\\Users\\Sahil Hassan\\Documents\\Coursework\\CSE201 Advanced Programming\\AP Project 1\\Data\\TestingPc.csv";
 		System.out.println(csvFile);
 	    String fieldDelimiter = ",";
 	    BufferedReader bufferedReader;

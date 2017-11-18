@@ -49,7 +49,7 @@ public class User implements Serializable {
 	public static User validate(String name, String password, String usertype) throws ClassNotFoundException, IOException {
 		
 		System.out.println("Name : " + name);
-		String path = "C:\\Users\\HP\\Downloads\\Submission\\Submission\\Data\\";
+		String path = "C:\\Users\\Sahil Hassan\\Documents\\Coursework\\CSE201 Advanced Programming\\AP Project 1\\Data\\";
 		FileInputStream fileIn = new FileInputStream(path + usertype + ".ser");
 		ObjectInputStream in = new ObjectInputStream(fileIn);
 		if(usertype.equals("Student")) {
@@ -108,7 +108,7 @@ public class User implements Serializable {
 	public ArrayList<Request> checkMyRequests(boolean accepted) throws IOException, ClassNotFoundException{
 		ArrayList<Request> requests = new ArrayList<Request>();
 		ArrayList<Request> finals = new ArrayList<Request>();
-		String path = "C:\\Users\\HP\\Downloads\\Submission\\Submission\\Data\\";
+		String path = "C:\\Users\\Sahil Hassan\\Documents\\Coursework\\CSE201 Advanced Programming\\AP Project 1\\Data\\";
 		System.out.println(path);
 		FileInputStream fileIn = new FileInputStream(path + "Requests.ser");
 		/*if(fileIn == null) {
@@ -205,7 +205,7 @@ public class User implements Serializable {
         mapbook.put("WEDNESDAY",5);		secondmap.put("WEDNESDAY","Wednesday");
         mapbook.put("THURSDAY",6);		secondmap.put("THURSDAY","Thursday");
         mapbook.put("FRIDAY",7);		secondmap.put("FRIDAY","Friday");
-    	String csvFile = "C:\\Users\\HP\\Downloads\\Submission\\Submission\\Data\\project.csv";
+    	String csvFile = "C:\\Users\\Sahil Hassan\\Documents\\Coursework\\CSE201 Advanced Programming\\AP Project 1\\Data\\project.csv";
         String FieldDelimiter = ",";
         BufferedReader bufferedReader;
         bufferedReader = new BufferedReader(new FileReader(csvFile));
@@ -364,7 +364,7 @@ public class User implements Serializable {
 	 */
 	private static boolean clashWithRequests(String room, LocalDate date, String time) throws IOException, ClassNotFoundException {
 		ArrayList<Request> requests = new ArrayList<Request>();
-		FileInputStream fileIn = new FileInputStream("C:\\Users\\HP\\Downloads\\Submission\\Submission\\Data\\Requests.ser");
+		FileInputStream fileIn = new FileInputStream("C:\\\\Users\\\\Sahil Hassan\\\\Documents\\\\Coursework\\\\CSE201 Advanced Programming\\\\AP Project 1\\\\Data\\\\Requests.ser");
 		ObjectInputStream in = new ObjectInputStream(fileIn);
 	    try{
 	        requests = (ArrayList<Request>) in.readObject();
