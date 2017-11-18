@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="469.0" prefWidth="337.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField layoutX="64.0" layoutY="235.0" prefHeight="0.0" prefWidth="152.0" promptText="Username" />
+      <PasswordField layoutX="66.0" layoutY="273.0" prefHeight="0.0" prefWidth="149.0" promptText="Password" />
+      <ChoiceBox fx:id="userType" layoutX="67.0" layoutY="320.0" prefWidth="150.0" />
+      <Button layoutX="187.0" layoutY="386.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="121.0" text="Enter" />
+      <RadioButton fx:id="loginButton" layoutX="64.0" layoutY="149.0" mnemonicParsing="false" selected="true" text="Login">
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="signupButton" layoutX="142.0" layoutY="149.0" mnemonicParsing="false" selected="true" text="Sign Up" toggleGroup="$group" />
+      <TextField fx:id="email" layoutX="66.0" layoutY="194.0" promptText="email" />
+      <Label layoutX="64.0" layoutY="43.0" prefHeight="75.0" prefWidth="169.0" text="IIITD">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="101.0" prefHeight="17.0" prefWidth="152.0" text="Label" />
+   </children>
+</AnchorPane>

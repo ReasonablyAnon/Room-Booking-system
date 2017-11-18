@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="941.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="welcomeLabel" layoutX="20.0" layoutY="15.0" prefHeight="51.0" prefWidth="301.0" text="Hi">
+         <font>
+            <Font name="Cambria Bold Italic" size="32.0" />
+         </font>
+      </Label>
+      <Accordion layoutY="68.0" prefHeight="1197.0" prefWidth="941.0">
+         <panes>
+            <TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="Book Room">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="bookRoom" layoutX="54.0" layoutY="23.0" prefHeight="39.0" prefWidth="174.0" promptText="Enter Room" />
+                        <DatePicker fx:id="bookDate" layoutX="54.0" layoutY="81.0" promptText="Start Date" />
+                        <TextField fx:id="bookStartTime" layoutX="54.0" layoutY="127.0" promptText="Start Time" />
+                        <TextField fx:id="bookEndTime" layoutX="295.0" layoutY="127.0" promptText="End Time" />
+                        <Button fx:id="bookSubmit" layoutX="54.0" layoutY="187.0" mnemonicParsing="false" onAction="#bookRoom" prefHeight="42.0" prefWidth="188.0" text="Submit" />
+                        <Label fx:id="booked" layoutX="295.0" layoutY="179.0" prefHeight="88.0" prefWidth="252.0" text="Booked or not">
+                           <font>
+                              <Font name="System Bold" size="37.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+            <TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="View Room Availability">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="roomCheck" layoutX="54.0" layoutY="33.0" prefHeight="39.0" prefWidth="174.0" promptText="Enter Room" />
+                        <DatePicker fx:id="availableDate" layoutX="54.0" layoutY="106.0" promptText="Start Date" />
+                        <TextField fx:id="availableStartTime" layoutX="54.0" layoutY="175.0" promptText="Start Time" />
+                        <TextField fx:id="availableEndTime" layoutX="299.0" layoutY="175.0" promptText="End Time" />
+                        <Button fx:id="availableButton" layoutX="54.0" layoutY="224.0" mnemonicParsing="false" onAction="#viewRoomAvailability" prefHeight="42.0" prefWidth="188.0" text="Submit" />
+                        <Label fx:id="available" layoutX="283.0" layoutY="201.0" prefHeight="88.0" prefWidth="306.0" text="Available or not">
+                           <font>
+                              <Font name="System Bold" size="37.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+            <TitledPane fx:id="checkMyRequests" animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="View Bookings">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="myRequests" layoutX="26.0" layoutY="26.0" prefHeight="174.0" prefWidth="469.0">
+                           <columns>
+                              <TableColumn fx:id="myRoomColumn" prefWidth="75.0" text="Room" />
+                              <TableColumn fx:id="myDateColumn" prefWidth="129.0" text="Date" />
+                              <TableColumn fx:id="myStartTimeColumn" prefWidth="117.0" text="Start Time" />
+                              <TableColumn fx:id="myEndTimeColumn" minWidth="0.0" prefWidth="147.0" text="End Time" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="cancelButton" layoutX="478.0" layoutY="208.0" mnemonicParsing="false" onAction="#cancelMyRequest" prefHeight="49.0" prefWidth="89.0" text="Cancel" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+         </panes>
+      </Accordion>
+      <Button fx:id="logoutButton" layoutX="774.0" layoutY="19.0" mnemonicParsing="false" onAction="#logoutClicked" prefHeight="42.0" prefWidth="129.0" text="Logout" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="496.0" prefWidth="485.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Separator layoutX="7.0" layoutY="76.0" prefHeight="6.0" prefWidth="485.0" />
+      <TextArea layoutX="78.0" layoutY="17.0" prefHeight="46.0" prefWidth="241.0" />
+      <Button layoutX="330.0" layoutY="25.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="76.0" text="Search" />
+      <Separator layoutX="5.0" layoutY="312.0" prefHeight="15.0" prefWidth="485.0" />
+      <Separator layoutX="242.0" layoutY="79.0" orientation="VERTICAL" prefHeight="239.0" prefWidth="5.0" />
+      <SplitMenuButton alignment="CENTER" layoutX="43.0" layoutY="157.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="165.0" text="Days" textOverrun="WORD_ELLIPSIS">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Monday" />
+          <MenuItem mnemonicParsing="false" text="Tuesday" />
+            <MenuItem mnemonicParsing="false" text="Wednesday" />
+            <MenuItem mnemonicParsing="false" text="Thursday" />
+            <MenuItem mnemonicParsing="false" text="Friday" />
+            <MenuItem mnemonicParsing="false" text="Saturday" />
+            <MenuItem mnemonicParsing="false" text="Sunday" />
+        </items>
+      </SplitMenuButton>
+      <Label alignment="CENTER" layoutX="23.0" layoutY="95.0" prefHeight="46.0" prefWidth="196.0" text="Rooms Availability">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="270.0" layoutY="95.0" prefHeight="46.0" prefWidth="196.0" text="Rooms Booked">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="56.0" layoutY="245.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="130.0" text="Views Rooms" />
+      <TableView layoutX="270.0" layoutY="137.0" prefHeight="168.0" prefWidth="200.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="64.0" text="C2" />
+            <TableColumn prefWidth="75.0" text="C1" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
